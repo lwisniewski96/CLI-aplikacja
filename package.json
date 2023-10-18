@@ -1,0 +1,20 @@
+{
+  "name": "node-zajecia-1",
+  "version": "1.0.0",
+  "description": "Krok 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": " nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukasz W",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "uuid": "^9.0.1"
+  }
+}

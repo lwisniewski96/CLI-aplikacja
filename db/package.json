@@ -1,0 +1,15 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "Krok 2 zadania domowego",
+  "main": "contacts.js",
+  "scripts": {
+    "dev" : "nodemon contacts.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukasz Wisniewski",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
