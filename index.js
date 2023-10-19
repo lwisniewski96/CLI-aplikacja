@@ -1,6 +1,6 @@
-const contacts = require("./db/contacts"); // Import modułu contacts.js
+const contacts = require("./db/contacts"); 
 
-// Wywołanie funkcji listContacts, która wyświetli listę kontaktów
+
 contacts.listContacts();
 
 const { Command } = require("commander");

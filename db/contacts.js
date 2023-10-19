@@ -4,9 +4,7 @@ const { v4: uuidv4 } = require("uuid");
 
 const contactsPath = path.join(__dirname, "contacts.json");
 
-/**
- * Funkcja listContacts odczytuje i wyświetla listę kontaktów z pliku.
- */
+
 function listContacts() {
   fs.readFile(contactsPath, "utf-8", (err, data) => {
     if (err) {
@@ -19,10 +17,9 @@ function listContacts() {
 }
 
 /**
- * Funkcja getContactById pobiera kontakt o podanym identyfikatorze.
  *
- * @param {string} contactId - Identyfikator kontaktu do pobrania.
- * @param {function} callback - Funkcja zwrotna wywoływana po zakończeniu operacji.
+ * @param {string} contactId 
+ * @param {function} callback 
  */
 
 function getContactById(contactId, callback) {
@@ -43,10 +40,10 @@ function getContactById(contactId, callback) {
 }
 
 /**
- * Funkcja removeContact usuwa kontakt o podanym identyfikatorze.
+ * 
  *
- * @param {string} contactId - Identyfikator kontaktu do pobrania.
- * @param {function} callback - Funkcja zwrotna wywoływana po zakończeniu operacji.
+ * @param {string} contactId 
+ * @param {function} callback 
  */
 
 function removeContact(contactId, callback) {
@@ -73,12 +70,12 @@ function removeContact(contactId, callback) {
 }
 
 /**
- * Funkcja addContact dodaje nowy kontakt do listy.
+ * 
  *
- * @param {string} name - Imię i nazwisko kontaktu.
- * @param {string} email - Adres e-mail kontaktu.
- * @param {string} phone - Numer telefonu kontaktu.
- * @param {function} callback - Funkcja zwrotna wywoływana po zakończeniu operacji.
+ * @param {string} name 
+ * @param {string} email 
+ * @param {string} phone 
+ * @param {function} callback 
  */
 
 function addContact(name, email, phone, callback) {
@@ -106,7 +103,7 @@ function addContact(name, email, phone, callback) {
   });
 }
 function generateContactId() {
-  return uuidv4(); // Wykorzystaj uuidv4 do generowania identyfikatora
+  return uuidv4(); 
 }
 
 module.exports = {
